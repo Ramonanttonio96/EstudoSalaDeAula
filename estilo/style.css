@@ -7,16 +7,32 @@
 :root{
     --cor-de-fundo: rgb(231, 134, 7);
     --cor-secundaria: rgb(255, 255, 255);
-    --cor-azul: rgb(0,0,255);
+    --cor-azul: rgb(0, 0, 255);
     --cor-preto: rgb(0, 0, 0);
     --cor-laranja-claro: rgb(255, 235, 205);
 }
 
 body{
     font-family: Roboto, sans-serif;
+    background-color: var(--cor-de-fundo);
+}
+header{
+    background-color: var(--cor-de-fundo);
+    height: 150px;
     width: 1024px;
     margin: auto;
-    background-color: var(--cor-de-fundo);
+    position: relative;
+    
+}
+header nav{
+    width: 1024px;
+    position: absolute;
+    bottom: 0;
+
+
+}
+header nav ul li{
+    display: inline-block;
 }
 
 main{
@@ -25,6 +41,8 @@ main{
     /* margin: 20px; */
     padding: 20px;
     position: relative;
+    width: 1024px;
+    margin: auto;
  }
 
 blockquote{
@@ -54,22 +72,23 @@ cite{
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
+}
+p {
+    text-indent: 50px;
 }
 
+ul,ol{
+    list-style: none;
+    
+}
 figure{
     width: 19.4%;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 30px;    
 }
 
-aside, figure{
-    float: right;
-    background-color: #7a7a7a;
-    color: var(--cor-secundaria);
-    border: 5px solid var(--cor-preto);
-}
 
 aside {
     width: 18%;
@@ -80,6 +99,13 @@ aside {
     right: 20px;
     clear: right;
     /* background-color: var(--cor-secundaria); */
+}
+aside, figure{
+    float: right;
+    background-color: #7a7a7a;
+    color: var(--cor-secundaria);
+    border: 5px solid var(--cor-preto);
+    
 }
 
 li{
@@ -164,14 +190,26 @@ ul{
     background-color: var(--cor-azul);
     display: inline-block;
     width: 40px;
-    height: 40px;
+    height:40px;
     padding: 0;
     margin-left: 10px;
 }
 .icones-sociais a{
-    background-image: url(img/github.png);
+    /* background-image: url(../img/github.png); */
     width: 40px;
     height: 40px;
     display: inline-block;
     color: white;
+    text-indent: -9999px;
+    /*font-size: 0 !impotant;*/
+    /*color: transparent*/
+ }
+ .github{
+     background-image: url(../img/github.png);
+ }
+ .twitter{
+     background-image: url(../img/twitter.png); 
+ }
+ .linkedin{
+     background-image: url(../img/twitter.png);
  }
