@@ -7,7 +7,7 @@
 :root{
     --cor-de-fundo: rgb(231, 134, 7);
     --cor-secundaria: rgb(255, 255, 255);
-    --cor-azul: rgb(0, 0, 255);
+    --cor-azul: rgb(0,0,255);
     --cor-preto: rgb(0, 0, 0);
     --cor-laranja-claro: rgb(255, 235, 205);
 }
@@ -16,21 +16,69 @@ body{
     font-family: Roboto, sans-serif;
     background-color: var(--cor-de-fundo);
 }
+
 header{
     background-color: var(--cor-de-fundo);
     height: 150px;
     width: 1024px;
     margin: auto;
     position: relative;
-    
 }
+
+header img{
+    width: 80px;
+}
+
+#logo{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 90px;
+}
+
+input[type=text]{
+    width: 500px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 38px;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    /* text-indent: 5px; */
+    padding: 0 5px;
+}
+
+#textoEnviamos{
+    position: absolute;
+    left: 275px;
+    top: 70px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+#carrinho{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-color: none;
+    border: none;
+}
+
+#cliente{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background-color: none;
+    border: none;
+ }
+
 header nav{
     width: 1024px;
     position: absolute;
     bottom: 0;
-
-
 }
+
 header nav ul li{
     display: inline-block;
 }
@@ -38,11 +86,11 @@ header nav ul li{
 main{
     background-color: var(--cor-secundaria);
     text-align: justify;
+    width: 1024px;
+    margin: auto;
     /* margin: 20px; */
     padding: 20px;
     position: relative;
-    width: 1024px;
-    margin: auto;
  }
 
 blockquote{
@@ -72,23 +120,30 @@ cite{
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
-p {
+
+p{
     text-indent: 50px;
 }
 
-ul,ol{
+ul, ol {
     list-style: none;
-    
 }
+
 figure{
     width: 19.4%;
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 30px;    
 }
 
+aside, figure{
+    float: right;
+    background-color: #7a7a7a;
+    color: var(--cor-secundaria);
+    border: 5px solid var(--cor-preto);
+}
 
 aside {
     width: 18%;
@@ -100,13 +155,6 @@ aside {
     clear: right;
     /* background-color: var(--cor-secundaria); */
 }
-aside, figure{
-    float: right;
-    background-color: #7a7a7a;
-    color: var(--cor-secundaria);
-    border: 5px solid var(--cor-preto);
-    
-}
 
 li{
     background-color: var(--cor-azul);
@@ -117,7 +165,6 @@ li{
     width: 40px; 
     */
 }
-
 
 nav ul li a {
     display: block;
@@ -182,15 +229,18 @@ img{
     text-align: center;
 }
 
-ul{
+aside, nav, ul{
     background-color: var(--cor-azul);
+    /* todos os atributos de lista */
+    /* só o atributo tipo */
+    /* list-style-type: none; */
 }
 
 .icones-sociais li{
     background-color: var(--cor-azul);
     display: inline-block;
     width: 40px;
-    height:40px;
+    height: 40px;
     padding: 0;
     margin-left: 10px;
 }
@@ -201,15 +251,18 @@ ul{
     display: inline-block;
     color: white;
     text-indent: -9999px;
-    /*font-size: 0 !impotant;*/
-    /*color: transparent*/
+    /* font-size: 0 !important; */
+    /* color: rgba(0,0,0,0); */
  }
+
  .github{
      background-image: url(../img/github.png);
  }
- .twitter{
-     background-image: url(../img/twitter.png); 
- }
+
  .linkedin{
-     background-image: url(../img/twitter.png);
+     background-image: url(../img/linkedin.png);
+ }
+
+ .twitter{
+     background-image: url(../img/twitter.png)
  }
