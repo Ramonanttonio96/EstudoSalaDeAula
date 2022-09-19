@@ -35,7 +35,7 @@ header{
     height: 84px;
     margin: auto;
 }
-#Menu{
+#menu{
     width: 100%;
     height: 40px;
     background-color: #111;
@@ -46,7 +46,7 @@ header{
     text-align: center;
     line-height: 40px;
 }
-#Menu a{
+#menu a{
     display: inline-block;
     font-size: 14px;
     color: #fff;
@@ -54,7 +54,7 @@ header{
     margin-left: 25px;
     margin-right: 25px;
 }
-Menu a:hover{
+menu a:hover{
     text-decoration: underline;
 }
 banner{
@@ -86,4 +86,71 @@ footer{
     line-height: 30px;
     text-align: center;
     
+}
+.anunciotablet{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: #f60;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 0;
+    display: none
+}
+#menumobile{
+    display: none;
+
+}
+
+/* layout Responsivo - Media query */
+
+/* tablet na vertical */
+@media screen and (min-width:641px ) and (max-width:768px) {
+    .anunciotablet{
+        display: block;
+    }
+}
+
+/* smart na horizontal */
+ @media screen and (max-width 480px){ 
+    nav#menu a {
+        margin: 0 10px
+    }
+    article#conteudo, aside#coluna {
+        width: 100%
+    }
+    section#logo{
+        width: 180px;
+        height: auto;
+    }
+    section#logo img{
+        width: 100%;
+    }
+
+}
+
+/* smart na vertical */
+@media screen and (max-width:400px){ 
+  nav#menu{
+    height: auto;
+    line-height: 30px;
+    display: none
+  }
+  nav#menu a{
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+  nav#menu a:last-child{
+    border:none;
+  }
+
+  nav#menumobile{
+    width: 100%;
+    display: block;
+  }
+  nav#menumobile select{
+    width: 100%;
+    background-color: #333;
+    color:#fff;
+  }
 }
